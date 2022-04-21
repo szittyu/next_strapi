@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "learns",
+  "info": {
+    "singularName": "learn",
+    "pluralName": "learns",
+    "displayName": "learn",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "ratingOfUseness": {
+      "type": "integer",
+      "required": true,
+      "min": 1,
+      "max": 10
+    },
+    "body": {
+      "type": "richtext",
+      "required": true
+    },
+    "enjoyedOrNot": {
+      "type": "boolean",
+      "required": true
+    }
+  }
+}
